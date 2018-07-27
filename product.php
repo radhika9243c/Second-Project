@@ -4,7 +4,7 @@
       //pr($_SESSION['user_table']) ;
       $id=$_SESSION['user_table']['id'];
       //pr($id);
-      $user_sel_qry = "SELECT * FROM user WHERE id = $id";
+      $user_sel_qry = "SELECT * FROM user_table WHERE id = $id";
       // pr($user_sel_qry);
       $result = mysqli_query($conn , $user_sel_qry);
       $data_row = mysqli_fetch_assoc($result);
